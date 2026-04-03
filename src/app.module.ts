@@ -24,12 +24,6 @@ import { CommunicationsModule } from './communications/communications.module';
         password: configService.get<string>('DB_PASSWORD', 'postgres'),
         database: configService.get<string>('DB_NAME', 'crm'),
         autoLoadEntities: true,
-ssl: {
-  rejectUnauthorized: false,
-},
-        synchronize: true,
-      }),
-    }),
     UsersModule,
     AuthModule,
     LeadsModule,
